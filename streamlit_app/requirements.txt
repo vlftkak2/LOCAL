@@ -3,3 +3,4 @@ pandas
 streamlit_lottie
 numpy
 htbuilder
+pymssql
