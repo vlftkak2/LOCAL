@@ -11,7 +11,7 @@ import pyodbc
 #conn = pymssql.connect(host='192.168.35.201:1433', user='root', password='Aa1234!!', database='Delivery', charset="utf8", autocommit=True)
 conn_str= (
     "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=192.168.35.201,1433;"
+    "SERVER=121.125.187.152;"
     "DATABASE=Delivery;"
     "UID=root;"
     "PWD=Aa1234!!;"        
