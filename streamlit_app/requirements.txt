@@ -4,3 +4,4 @@ streamlit_lottie
 numpy
 htbuilder
 pymssql
+pyodbc==5.2.0
