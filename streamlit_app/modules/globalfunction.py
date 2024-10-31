@@ -1,0 +1,20 @@
+import streamlit as st
+import pandas as pd
+import pymssql
+import numpy as np
+import datetime
+import time
+
+# DB 연결
+#conn = pymssql.connect(host=st.secrets['server'], user=st.secrets['username'], password=st.secrets['password'], database=st.secrets['database'], charset="utf8", autocommit=True)
+conn = pymssql.connect(host='192.168.35.201:1433', user='root', password='Aa1234!!', database='Delivery', charset="utf8", autocommit=True)
+cursor = conn.cursor()
+
+# 재고부족 확인
+def TEST():
+    fu_query = "SELECT * FROM DeliveryStand01t"
+    data = pd.read_sql_query(fu_query,conn)
+    DeliveryData = pd.DataFrame(data)
+    return DeliveryData
+
+    
