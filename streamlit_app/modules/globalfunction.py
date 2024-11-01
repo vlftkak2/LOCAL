@@ -8,7 +8,7 @@ import pyodbc
 
 # DB 연결
 #conn = pymssql.connect(host=st.secrets['server'], user=st.secrets['username'], password=st.secrets['password'], database=st.secrets['database'], charset="utf8", autocommit=True)
-conn = pymssql.connect(host='192.168.110.49,1433', user='APR', password='Aa1234!!', database='APR', charset="utf8", autocommit=True)
+conn = pymssql.connect(host='192.168.110.49', user='APR', password='Aa1234!!', database='APR', charset="utf8", autocommit=True)
 # conn_str= (
 #     "DRIVER={ODBC Driver 17 for SQL Server};"
 #     "SERVER=192.168.35.201,1433;"
