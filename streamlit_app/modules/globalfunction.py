@@ -4,7 +4,6 @@ import pymssql
 import numpy as np
 import datetime
 import time
-import pyodbc
 
 # DB 연결
 conn = pymssql.connect(host='192.168.110.49:1433', user='APR', password='Aa1234!!', database='APR', charset="utf8", autocommit=True)
